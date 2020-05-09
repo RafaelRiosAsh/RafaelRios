@@ -1,0 +1,21 @@
+.carousel{
+    margin-bottom: 10px;
+}
+
+.carousel-item{
+    height: 300px;
+}
+.grey{
+    background: gray;
+}
+.orange{
+    background: orange;
+}
+.green{
+    background: green;
+}
+.footer{
+    background-color: rgb(189, 189, 189);
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}

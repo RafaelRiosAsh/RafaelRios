@@ -1,0 +1,24 @@
+{
+  "name": "bootstraptets",
+  "version": "1.0.0",
+  "description": "personal page",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelRiosAsh/PersonalPage.git"
+  },
+  "author": "Rafael Rios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelRiosAsh/PersonalPage/issues"
+  },
+  "homepage": "https://github.com/RafaelRiosAsh/PersonalPage#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

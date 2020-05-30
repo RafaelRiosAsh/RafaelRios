@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>ACE in Action</title>
+<title>Turing Editor</title>
 <style type="text/css" media="screen">
     #editor { 
         position: absolute;
@@ -19,15 +19,24 @@
     var x = "All this is syntax highlighted";
     return x;
 }
+
 var test = 100;
 test +=1;
 </div>
 </div>  
 <script src="src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="src-min-noconflict/ext-language_tools.js"></script>
 <script>
+    ace.require("ace/ext/language_tools");
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/monokai");
-    editor.session.setMode("ace/mode/javascript");
+    editor.session.setMode("ace/mode/java");
+    editor.setOptions({
+        fontSize: 13,
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion:   true
+});
 </script>
 </body>
 </html>

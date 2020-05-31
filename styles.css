@@ -48,3 +48,23 @@ body{
     width: 1rem;
     border-width: .1em;
 }
+#Teditor { 
+    position: absolute;
+    top: 31px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.btn{
+    border: none;
+    color: rgb(158, 158, 158);
+    background-color:  rgb(49, 49, 49);
+    font-size: 12px;
+}
+.codeActive{
+    color: rgb(238, 238, 238);
+    background-color:  rgb(39,40,34);
+}
+.btn:hover{
+    background-color:  rgb(49, 49, 49);
+}

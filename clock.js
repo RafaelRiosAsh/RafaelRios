@@ -8,12 +8,6 @@ function setup() {
     Width = windowHeight;
     Height = windowHeight;
   }
-  if (windowWidth <= 600 || windowHeight <= 600){
-    divisor = 4.5;
-  }
-  else{
-    divisor = 8;
-  }
   Year = Width - Width/10;
   Day = Year - Year/10;
   biggestCircle= Day - Year/5;
@@ -46,13 +40,13 @@ function setup() {
 function draw() {
   clear();
   
-  strokeWeight(0); //for debugging
+  /*strokeWeight(0); //for debugging
   fill(0)
   text(gradient1+' '+gradient2+' '+gradient3+' '+gradient4+' '+gradient5,20,20);
   fill(color1);
   text('day: '+day()+' width: '+Width+' height: '+Height,20,40);
   fill(color2);
-  text('month: '+month()+' divisor: '+divisor,20,60);
+  text('month: '+month()+' divisor: '+divisor,20,60);*/
   strokeWeight(strokeSize);
   noFill();
   stroke(gradient5);
@@ -93,6 +87,6 @@ function drawCircles(shapeCount, circleSize, circleColor, num){
   for(i = num; i >= 0; i--){
     posx = circleSize * sin(i*shapeAngle) + width/2;
     posy = circleSize * -cos(i*shapeAngle) + height/2;
-    circle(posx, posy, strokeSize/divisor);
+    circle(posx, posy, strokeSize/4.5);
   }
 }

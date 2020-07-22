@@ -8,7 +8,7 @@ function setup() {
     Width = windowHeight;
     Height = windowHeight;
   }
-  if (Width <= 500){
+  if (windowWidth <= 600 || windowHeight <= 600){
     divisor = 4.5;
   }
   else{
@@ -46,13 +46,13 @@ function setup() {
 function draw() {
   clear();
   
-  /*strokeWeight(0); //for debugging
+  strokeWeight(0); //for debugging
   fill(0)
   text(gradient1+' '+gradient2+' '+gradient3+' '+gradient4+' '+gradient5,20,20);
   fill(color1);
-  text('day: '+day(),20,40);
+  text('day: '+day()+' width: '+Width+' height: '+Height,20,40);
   fill(color2);
-  text('month: '+month(),20,60);*/ 
+  text('month: '+month()+' divisor: '+divisor,20,60);
   strokeWeight(strokeSize);
   noFill();
   stroke(gradient5);
